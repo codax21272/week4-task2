@@ -2,7 +2,7 @@
 
 ---
 
-## Q1: Getting started with nmap
+## A1: Getting started with nmap
 
 The Docker-based environment was started using `docker compose up -d`, which created the required services and internal networks. The relevant Docker bridge network used in this task was `networksecurity_mitm`.
 
@@ -26,7 +26,7 @@ Based on these results, bob acts as a server providing an HTTP service, while al
 
 ---
 
-## Q2: Capturing the voting traffic
+## A2: Capturing the voting traffic
 
 Network traffic was captured using Wireshark on the Docker bridge interface associated with the `networksecurity_mitm` network.
 
@@ -40,7 +40,7 @@ All captured traffic occurred within the internal Docker bridge network, confirm
 
 ---
 
-## Q3: Unique votes
+## A3: Unique votes
 
 Based on the network analysis, vote uniqueness is not enforced at the network level but rather through application-level mechanisms.
 
@@ -54,7 +54,7 @@ As a result, the concept of “unique votes” can be bypassed if uniqueness rel
 
 ---
 
-## Q4: nmap aggressive scan
+## A4: nmap aggressive scan
 
 An aggressive scan was performed using the following command:
 
@@ -75,7 +75,7 @@ Aggressive scans generate more intrusive traffic than basic scans and may impact
 
 ---
 
-## Q5: Promiscuous mode
+## A5: Promiscuous mode
 
 Wireshark’s promiscuous mode allows a network interface to capture all packets it can observe, not only packets explicitly addressed to the host.
 
